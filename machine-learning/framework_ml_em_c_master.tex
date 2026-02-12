@@ -1,5 +1,7 @@
 \documentclass[12pt]{book}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{geometry}
 \usepackage{listings}
@@ -38,20 +40,31 @@
     showstringspaces=false,
     showtabs=false,
     tabsize=2,
-    frame=single
+    frame=single,
+    extendedchars=true,
+    inputencoding=utf8,
+    literate=%
+        {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+        {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+        {ã}{{\~a}}1 {õ}{{\~o}}1 {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1
+        {ô}{{\^o}}1 {û}{{\^u}}1 {ç}{{\c{c}}}1 {Ç}{{\c{C}}}1
+        {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+        {À}{{\`A}}1 {È}{{\`E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+        {Ã}{{\~A}}1 {Õ}{{\~O}}1 {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1
+        {Ô}{{\^O}}1 {Û}{{\^U}}1
 }
 
 \lstset{style=cstyle}
 
-\newtheorem{definition}{Definição}[chapter]
+\newtheorem{definition}{Definicao}[chapter]
 \newtheorem{theorem}{Teorema}[chapter]
 \newtheorem{lemma}{Lema}[chapter]
-\newtheorem{corollary}{Corolário}[chapter]
+\newtheorem{corollary}{Corolario}[chapter]
 \newtheorem{example}{Exemplo}[chapter]
 
 \title{Construindo um Framework Completo de Deep Learning em C \\
-\large Do Zero ao Produção: Matemática, Algoritmos e Arquitetura}
-\author{Guia Master Avançado}
+\large Do Zero ao Producao: Matematica, Algoritmos e Arquitetura}
+\author{Guia Master Avancado}
 \date{\today}
 
 \begin{document}
@@ -61,64 +74,64 @@
 \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter*{Prefácio}
-Este livro não é apenas um tutorial superficial. É uma jornada profunda através de todos os aspectos do deep learning, desde os fundamentos matemáticos mais abstratos até os detalhes de implementação de baixo nível em C puro.
+\chapter*{Prefacio}
+Este livro nao e um tutorial superficial. E uma jornada profunda atraves de todos os aspectos do deep learning, desde os fundamentos matematicos mais abstratos ate os detalhes de implementacao de baixo nivel em C puro.
 
-A cada capítulo, você não apenas aprenderá conceitos, mas implementará código funcional e testado. Ao final, você terá construído um framework completo equivalente a um PyTorch simplificado, totalmente funcional e capaz de treinar redes neurais complexas.
+A cada capitulo, voce nao apenas aprendera conceitos, mas implementara codigo funcional e testado. Ao final, voce tera construido um framework completo equivalente a um PyTorch simplificado, totalmente funcional e capaz de treinar redes neurais complexas.
 
 \vspace{1cm}
 \noindent
-\textbf{Pré-requisitos:}
+\textbf{Pre-requisitos:}
 \begin{itemize}
-    \item Conhecimento sólido de C (ponteiros, alocação dinâmica, structs)
-    \item Matemática básica de graduação (cálculo, álgebra linear)
+    \item Conhecimento solido de C (ponteiros, alocacao dinamica, structs)
+    \item Matematica basica de graduacao (calculo, algebra linear)
     \item Vontade de entender cada detalhe
 \end{itemize}
 
 \vspace{1cm}
 \noindent
 \textbf{Quanto tempo leva?} \\
-Implementar todo o framework do zero pode levar de 2 a 3 meses de trabalho dedicado. Cada capítulo contém exercícios que consolidam o aprendizado.
+Implementar todo o framework do zero pode levar de 2 a 3 meses de trabalho dedicado. Cada capitulo contem exercicios que consolidam o aprendizado.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Fundamentos Matemáticos e Teóricos do Aprendizado}
+\chapter{Fundamentos Matematicos e Teoricos do Aprendizado}
 
 \section{O Problema Fundamental do Aprendizado}
 
-O aprendizado de máquina supervisionado pode ser formalizado como um problema de otimização. Dado um conjunto de dados $\mathcal{D} = \{(\mathbf{x}_i, y_i)\}_{i=1}^N$ onde $\mathbf{x}_i \in \mathbb{R}^d$ e $y_i \in \mathbb{R}^k$, queremos encontrar uma função $f: \mathbb{R}^d \to \mathbb{R}^k$ parametrizada por $\theta$ que minimize:
+O aprendizado de maquina supervisionado pode ser formalizado como um problema de otimizacao. Dado um conjunto de dados $\mathcal{D} = \{(\mathbf{x}_i, y_i)\}_{i=1}^N$ onde $\mathbf{x}_i \in \mathbb{R}^d$ e $y_i \in \mathbb{R}^k$, queremos encontrar uma funcao $f: \mathbb{R}^d \to \mathbb{R}^k$ parametrizada por $\theta$ que minimize:
 
 \[
 \theta^* = \arg \min_{\theta} \mathbb{E}_{(\mathbf{x},y) \sim p_{\text{data}}} [\mathcal{L}(f(\mathbf{x};\theta), y)]
 \]
 
-Na prática, como $p_{\text{data}}$ é desconhecida, aproximamos pelo risco empírico:
+Na pratica, como $p_{\text{data}}$ e desconhecida, aproximamos pelo risco empirico:
 
 \[
 \theta^* \approx \arg \min_{\theta} \frac{1}{N} \sum_{i=1}^N \mathcal{L}(f(\mathbf{x}_i;\theta), y_i)
 \]
 
-\subsection{Espaço de Hipóteses e Capacidade}
+\subsection{Espaco de Hipoteses e Capacidade}
 
-Uma rede neural define um espaço de hipóteses $\mathcal{H}$. O teorema da aproximação universal (Cybenko, 1989) estabelece que uma rede feedforward com uma camada oculta pode aproximar qualquer função contínua em um compacto de $\mathbb{R}^d$.
+Uma rede neural define um espaco de hipoteses $\mathcal{H}$. O teorema da aproximacao universal (Cybenko, 1989) estabelece que uma rede feedforward com uma camada oculta pode aproximar qualquer funcao continua em um compacto de $\mathbb{R}^d$.
 
-\begin{theorem}[Aproximação Universal]
-Seja $\sigma$ uma função de ativação não constante, limitada e monótona. Então o conjunto de funções da forma:
+\begin{theorem}[Aproximacao Universal]
+Seja $\sigma$ uma funcao de ativacao nao constante, limitada e monotona. Entao o conjunto de funcoes da forma:
 \[
 f(\mathbf{x}) = \sum_{j=1}^m v_j \sigma(\mathbf{w}_j^T\mathbf{x} + b_j)
 \]
-é denso em $C([0,1]^d)$ no espaço das funções contínuas.
+e denso em $C([0,1]^d)$ no espaco das funcoes continuas.
 \end{theorem}
 
-\section{Derivação Detalhada da Função de Custo}
+\section{Deducao Detalhada da Funcao de Custo}
 
 \subsection{Mean Squared Error (MSE)}
 
-Para problemas de regressão, assumimos que a variável alvo é gerada por:
+Para problemas de regressao, assumimos que a variavel alvo e gerada por:
 \[
 y = f(\mathbf{x};\theta) + \epsilon, \quad \epsilon \sim \mathcal{N}(0, \sigma^2)
 \]
 
-A verossimilhança dos dados é:
+A verossimilhanca dos dados e:
 \[
 p(y|\mathbf{x},\theta) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left(-\frac{(y - f(\mathbf{x};\theta))^2}{2\sigma^2}\right)
 \]
@@ -128,26 +141,26 @@ Tomando o log negativo:
 -\log p(y|\mathbf{x},\theta) = \frac{1}{2}\log(2\pi\sigma^2) + \frac{(y - f(\mathbf{x};\theta))^2}{2\sigma^2}
 \]
 
-Ignorando constantes, minimizar MSE é equivalente a maximizar a verossimilhança sob ruído Gaussiano.
+Ignorando constantes, minimizar MSE e equivalente a maximizar a verossimilhanca sob ruido Gaussiano.
 
-\subsection{Cross-Entropy para Classificação}
+\subsection{Cross-Entropy para Classificacao}
 
-Para classificação binária, assumimos $y \in \{0,1\}$ e modelamos:
+Para classificacao binaria, assumimos $y \in \{0,1\}$ e modelamos:
 \[
 p(y=1|\mathbf{x}) = \sigma(f(\mathbf{x};\theta)) = \frac{1}{1+e^{-f(\mathbf{x};\theta)}}
 \]
 
-A verossimilhança:
+A verossimilhanca:
 \[
 p(y|\mathbf{x}) = \sigma(f)^y (1-\sigma(f))^{1-y}
 \]
 
-Log-verossimilhança negativa:
+Log-verossimilhanca negativa:
 \[
 \mathcal{L} = -y\log(\sigma(f)) - (1-y)\log(1-\sigma(f))
 \]
 
-Para classificação multiclasse com $K$ classes, generalizamos via softmax:
+Para classificacao multiclasse com $K$ classes, generalizamos via softmax:
 \[
 p(y=c|\mathbf{x}) = \frac{e^{f_c(\mathbf{x})}}{\sum_{j=1}^K e^{f_j(\mathbf{x})}}
 \]
@@ -155,25 +168,25 @@ p(y=c|\mathbf{x}) = \frac{e^{f_c(\mathbf{x})}}{\sum_{j=1}^K e^{f_j(\mathbf{x})}}
 \mathcal{L} = -\sum_{c=1}^K y_c \log p(y=c|\mathbf{x})
 \]
 
-\section{Otimização e Gradiente Descendente}
+\section{Otimizacao e Gradiente Descendente}
 
-\subsection{Derivação do Gradiente}
+\subsection{Deducao do Gradiente}
 
-Queremos minimizar $J(\theta) = \frac{1}{N}\sum_{i=1}^N \mathcal{L}(f(\mathbf{x}_i;\theta), y_i)$. A expansão em série de Taylor de primeira ordem:
+Queremos minimizar $J(\theta) = \frac{1}{N}\sum_{i=1}^N \mathcal{L}(f(\mathbf{x}_i;\theta), y_i)$. A expansao em serie de Taylor de primeira ordem:
 
 \[
 J(\theta + \Delta\theta) \approx J(\theta) + \nabla_\theta J(\theta)^T \Delta\theta
 \]
 
-Para garantir decréscimo, escolhemos $\Delta\theta = -\eta \nabla_\theta J(\theta)$:
+Para garantir decrescimo, escolhemos $\Delta\theta = -\eta \nabla_\theta J(\theta)$:
 
 \[
 J(\theta + \Delta\theta) \approx J(\theta) - \eta \|\nabla_\theta J(\theta)\|^2 \leq J(\theta)
 \]
 
-\subsection{Análise de Convergência}
+\subsection{Analise de Convergencia}
 
-Sob hipóteses de suavidade de Lipschitz do gradiente:
+Sob hipoteses de suavidade de Lipschitz do gradiente:
 \[
 \|\nabla J(\theta_1) - \nabla J(\theta_2)\| \leq L \|\theta_1 - \theta_2\|
 \]
@@ -185,23 +198,23 @@ J(\theta_{t+1}) \leq J(\theta_t) - \frac{\eta}{2}\|\nabla J(\theta_t)\|^2
 
 \section{Regra da Cadeia Vetorial e Jacobianos}
 
-O backpropagation é uma aplicação eficiente da regra da cadeia para funções compostas vetoriais. Seja $f: \mathbb{R}^m \to \mathbb{R}^n$ e $g: \mathbb{R}^n \to \mathbb{R}^p$. Então:
+O backpropagation e uma aplicacao eficiente da regra da cadeia para funcoes compostas vetoriais. Seja $f: \mathbb{R}^m \to \mathbb{R}^n$ e $g: \mathbb{R}^n \to \mathbb{R}^p$. Entao:
 \[
 \frac{\partial (g \circ f)}{\partial \mathbf{x}} = \frac{\partial g}{\partial \mathbf{f}} \cdot \frac{\partial \mathbf{f}}{\partial \mathbf{x}}
 \]
 
 Onde $\frac{\partial g}{\partial \mathbf{f}} \in \mathbb{R}^{p \times n}$ e $\frac{\partial \mathbf{f}}{\partial \mathbf{x}} \in \mathbb{R}^{n \times m}$.
 
-\subsection{Diferença entre Gradiente e Jacobiano}
+\subsection{Diferenca entre Gradiente e Jacobiano}
 
-Para uma função escalar $L: \mathbb{R}^n \to \mathbb{R}$, $\nabla L$ é um vetor. Para uma função vetorial $\mathbf{f}: \mathbb{R}^n \to \mathbb{R}^m$, a derivada é uma matriz Jacobiana.
+Para uma funcao escalar $L: \mathbb{R}^n \to \mathbb{R}$, $\nabla L$ e um vetor. Para uma funcao vetorial $\mathbf{f}: \mathbb{R}^n \to \mathbb{R}^m$, a derivada e uma matriz Jacobiana.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Implementação Base em C: Estruturas e Gerenciamento de Memória}
+\chapter{Implementacao Base em C: Estruturas e Gerenciamento de Memoria}
 
-\section{Gerenciamento de Memória para Tensores}
+\section{Gerenciamento de Memoria para Tensores}
 
-A base de qualquer framework é o gerenciamento eficiente de arrays multidimensionais. Vamos implementar do zero:
+A base de qualquer framework e o gerenciamento eficiente de arrays multidimensionais. Vamos implementar do zero:
 
 \begin{lstlisting}[language=C, caption=Estrutura base do Tensor]
 #include <stdio.h>
@@ -211,14 +224,14 @@ A base de qualquer framework é o gerenciamento eficiente de arrays multidimensi
 #include <assert.h>
 
 typedef struct Tensor {
-    float* data;          // Dados contíguos em memória
+    float* data;          // Dados contiguos em memoria
     float* grad;          // Gradientes acumulados
-    int* shape;           // Dimensões do tensor (ex: [3,224,224])
-    int ndim;             // Número de dimensões
-    int size;             // Produto das dimensões
-    int refcount;         // Contagem de referências para garbage collection
+    int* shape;           // Dimensoes do tensor (ex: [3,224,224])
+    int ndim;             // Numero de dimensoes
+    int size;             // Produto das dimensoes
+    int refcount;         // Contagem de referencias para garbage collection
     
-    // Para autograd (será expandido depois)
+    // Para autograd (sera expandido depois)
     struct Tensor* grad_fn;
     void (*backward)(struct Tensor*);
     
@@ -226,9 +239,9 @@ typedef struct Tensor {
 } Tensor;
 \end{lstlisting}
 
-\section{Funções de Criação e Destruição}
+\section{Funcoes de Criacao e Destruicao}
 
-\begin{lstlisting}[language=C, caption=Alocação e liberação de memória]
+\begin{lstlisting}[language=C, caption=Alocacao e liberacao de memoria]
 Tensor* tensor_create(int* shape, int ndim) {
     Tensor* t = (Tensor*)malloc(sizeof(Tensor));
     t->ndim = ndim;
@@ -262,11 +275,11 @@ void tensor_free(Tensor* t) {
 }
 \end{lstlisting}
 
-\section{Operações Básicas Otimizadas}
+\section{Operacoes Basicas Otimizadas}
 
-Operações vetorizadas usando loops otimizados:
+Operacoes vetorizadas usando loops otimizados:
 
-\begin{lstlisting}[language=C, caption=Operações element-wise]
+\begin{lstlisting}[language=C, caption=Operacoes element-wise]
 void tensor_add_scalar(Tensor* t, float scalar) {
     for(int i = 0; i < t->size; i++) {
         t->data[i] += scalar;
@@ -289,9 +302,9 @@ void tensor_multiply_elementwise(Tensor* a, Tensor* b, Tensor* out) {
 
 \section{Produto Matricial Otimizado}
 
-Implementação de multiplicação de matrizes com três loops aninhados (O(n³)) - posteriormente otimizaremos com blocagem e SIMD:
+Implementacao de multiplicacao de matrizes com tres loops aninhados (O(n³)) - posteriormente otimizaremos com blocagem e SIMD:
 
-\begin{lstlisting}[language=C, caption=Multiplicação de matrizes]
+\begin{lstlisting}[language=C, caption=Multiplicacao de matrizes]
 void tensor_matmul(Tensor* a, Tensor* b, Tensor* out) {
     // Assume a: [m, k], b: [k, n], out: [m, n]
     int m = a->shape[0];
@@ -312,12 +325,12 @@ void tensor_matmul(Tensor* a, Tensor* b, Tensor* out) {
 }
 \end{lstlisting}
 
-\section{Estratégias de Otimização de Memória}
+\section{Estrategias de Otimizacao de Memoria}
 
-\subsection{Pooling de Alocação}
-Para evitar fragmentação de memória, implementamos um pool de alocação:
+\subsection{Pooling de Alocacao}
+Para evitar fragmentacao de memoria, implementamos um pool de alocacao:
 
-\begin{lstlisting}[language=C, caption=Alocador de memória customizado]
+\begin{lstlisting}[language=C, caption=Alocador de memoria customizado]
 typedef struct MemoryPool {
     void* memory;
     size_t size;
@@ -341,13 +354,13 @@ void* pool_alloc(MemoryPool* pool, size_t size) {
 \end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Rede Neural: Matemática e Implementação Detalhada}
+\chapter{Rede Neural: Matematica e Implementacao Detalhada}
 
 \section{Arquitetura de uma Rede Neural}
 
-\subsection{Neurônio Artificial: Modelo Matemático}
+\subsection{Neuronio Artificial: Modelo Matematico}
 
-Um neurônio artificial implementa:
+Um neuronio artificial implementa:
 \[
 z = \mathbf{w}^T\mathbf{x} + b = \sum_{i=1}^n w_i x_i + b
 \]
@@ -355,7 +368,7 @@ z = \mathbf{w}^T\mathbf{x} + b = \sum_{i=1}^n w_i x_i + b
 a = \phi(z)
 \]
 
-Onde $\phi$ é a função de ativação. As derivadas são cruciais para backpropagation:
+Onde $\phi$ e a funcao de ativacao. As derivadas sao cruciais para backpropagation:
 
 \begin{itemize}
     \item Sigmoid: $\sigma(z) = \frac{1}{1+e^{-z}}$, $\sigma'(z) = \sigma(z)(1-\sigma(z))$
@@ -363,7 +376,7 @@ Onde $\phi$ é a função de ativação. As derivadas são cruciais para backpro
     \item ReLU: $\text{ReLU}(z) = \max(0,z)$, $\text{ReLU}'(z) = \begin{cases} 1 & z > 0 \\ 0 & z \leq 0 \end{cases}$
 \end{itemize}
 
-\section{Backpropagation: Derivação Passo a Passo}
+\section{Backpropagation: Deducao Passo a Passo}
 
 \subsection{Caso Simples: 2 Camadas}
 
@@ -372,15 +385,15 @@ Considere uma rede com uma camada oculta:
 z_1 &= W_1 x + b_1 \\
 a_1 &= \sigma(z_1) \\
 z_2 &= W_2 a_1 + b_2 \\
-\hat{y} &= z_2 \quad \text{(regressão)}
+\hat{y} &= z_2 \quad \text{(regressao)}
 \end{align*}
 
-Função de custo MSE:
+Funcao de custo MSE:
 \[
 L = \frac{1}{2}(\hat{y} - y)^2
 \]
 
-\subsubsection{Derivadas da Camada de Saída}
+\subsubsection{Derivadas da Camada de Saida}
 \[
 \frac{\partial L}{\partial \hat{y}} = \hat{y} - y
 \]
@@ -405,7 +418,7 @@ L = \frac{1}{2}(\hat{y} - y)^2
 \frac{\partial L}{\partial b_1} = \frac{\partial L}{\partial z_1}
 \]
 
-\subsection{Implementação Completa do Backprop}
+\subsection{Implementacao Completa do Backprop}
 
 \begin{lstlisting}[language=C, caption=Backpropagation para MLP de 2 camadas]
 typedef struct Layer {
@@ -413,7 +426,7 @@ typedef struct Layer {
     Tensor* bias;
     Tensor* input;
     Tensor* output;
-    Tensor* z;  // Pré-ativação
+    Tensor* z;  // Pre-ativacao
     char activation; // 's' sigmoid, 'r' relu, 't' tanh, 'n' none
 } Layer;
 
@@ -430,7 +443,7 @@ void mlp_backward(MLP* net, Tensor* loss_grad) {
     for(int l = net->n_layers - 1; l >= 0; l--) {
         Layer* layer = net->layers[l];
         
-        // Gradiente dos parâmetros da camada atual
+        // Gradiente dos parametros da camada atual
         if(layer->weights->requires_grad) {
             // dL/dW = input^T * grad
             tensor_matmul_transpose(layer->input, grad, 
@@ -448,12 +461,12 @@ void mlp_backward(MLP* net, Tensor* loss_grad) {
             Tensor* new_grad = tensor_create(...);
             tensor_matmul(grad, layer->weights, new_grad, 1); // Transpose W
             
-            // Multiplicar pela derivada da ativação
+            // Multiplicar pela derivada da ativacao
             if(layer->activation == 's') {
                 tensor_sigmoid_prime(layer->z, layer->z_prime);
                 tensor_multiply_elementwise(new_grad, layer->z_prime, new_grad);
             }
-            // ... outras ativações
+            // ... outras ativacoes
             
             grad = new_grad;
         }
@@ -461,12 +474,12 @@ void mlp_backward(MLP* net, Tensor* loss_grad) {
 }
 \end{lstlisting}
 
-\section{Inicialização de Pesos}
+\section{Inicializacao de Pesos}
 
-A inicialização correta dos pesos é crítica para evitar gradientes desvanecentes/explosivos.
+A inicializacao correta dos pesos e critica para evitar gradientes desvanecentes/explosivos.
 
 \subsection{Xavier/Glorot Initialization}
-Para ativações sigmoid/tanh:
+Para ativacoes sigmoid/tanh:
 \[
 W \sim \mathcal{U}\left(-\sqrt{\frac{6}{n_{\text{in}} + n_{\text{out}}}}, \sqrt{\frac{6}{n_{\text{in}} + n_{\text{out}}}}\right)
 \]
@@ -501,33 +514,33 @@ void init_weights_he(Tensor* w, int fan_in) {
 
 \section{Arquitetura do Grafo Computacional}
 
-O autograd constrói um grafo acíclico dirigido (DAG) das operações.
+O autograd constroi um grafo aciclico dirigido (DAG) das operacoes.
 
-\begin{lstlisting}[language=C, caption=Estrutura do nó do grafo]
+\begin{lstlisting}[language=C, caption=Estrutura do no do grafo]
 typedef struct AutogradNode {
     Tensor* output;
     struct AutogradNode** parents;
     int n_parents;
     
-    // Função que calcula gradientes dos pais
+    // Funcao que calcula gradientes dos pais
     void (*backward)(struct AutogradNode*);
     
-    // Metadados da operação
+    // Metadados da operacao
     int op_type;  // 0: add, 1: mul, 2: matmul, 3: relu, ...
-    void* op_ctx; // Contexto específico da operação
+    void* op_ctx; // Contexto especifico da operacao
 } AutogradNode;
 
 typedef struct Tensor {
     // ... campos anteriores ...
     
     AutogradNode* grad_node;
-    char grad_computed;  // Para evitar computação duplicada
+    char grad_computed;  // Para evitar computacao duplicada
 } Tensor;
 \end{lstlisting}
 
-\section{Implementação de Operações com Grafo}
+\section{Implementacao de Operacoes com Grafo}
 
-\begin{lstlisting}[language=C, caption=Operação de multiplicação com autograd]
+\begin{lstlisting}[language=C, caption=Operacao de multiplicacao com autograd]
 Tensor* tensor_mul(Tensor* a, Tensor* b) {
     Tensor* out = tensor_create_like(a);  // Assume broadcasting implementado
     
@@ -573,9 +586,9 @@ void mul_backward(AutogradNode* node) {
 }
 \end{lstlisting}
 
-\section{Topological Sort e Propagação Reversa}
+\section{Topological Sort e Propagacao Reversa}
 
-\begin{lstlisting}[language=C, caption=Backward recursivo com ordenação topológica]
+\begin{lstlisting}[language=C, caption=Backward recursivo com ordenacao topologica]
 void tensor_backward(Tensor* loss) {
     if(!loss->requires_grad) return;
     
@@ -584,12 +597,12 @@ void tensor_backward(Tensor* loss) {
         loss->grad[i] = 1.0f;
     }
     
-    // Coleta todos os nós do grafo via DFS
+    // Coleta todos os nos do grafo via DFS
     AutogradNode** nodes = NULL;
     int n_nodes = 0;
     collect_nodes(loss->grad_node, &nodes, &n_nodes);
     
-    // Ordenação topológica (DFS reversa)
+    // Ordenacao topologica (DFS reversa)
     topological_sort(nodes, n_nodes);
     
     // Backward em ordem reversa
@@ -608,12 +621,12 @@ void collect_nodes(AutogradNode* node, AutogradNode*** nodes, int* n) {
         if((*nodes)[i] == node) return;
     }
     
-    // Adiciona à lista
+    // Adiciona a lista
     *nodes = realloc(*nodes, (*n + 1) * sizeof(AutogradNode*));
     (*nodes)[*n] = node;
     (*n)++;
     
-    // Recursão nos pais
+    // Recursao nos pais
     for(int i = 0; i < node->n_parents; i++) {
         collect_nodes(node->parents[i], nodes, n);
     }
@@ -621,11 +634,11 @@ void collect_nodes(AutogradNode* node, AutogradNode*** nodes, int* n) {
 \end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Camadas Avançadas e Funções de Ativação}
+\chapter{Camadas Avancadas e Funcoes de Ativacao}
 
 \section{Camada Linear (Fully Connected)}
 
-\begin{lstlisting}[language=C, caption=Implementação completa da camada Linear]
+\begin{lstlisting}[language=C, caption=Implementacao completa da camada Linear]
 typedef struct Linear {
     Tensor* weight;
     Tensor* bias;
@@ -710,7 +723,7 @@ void linear_backward(Linear* layer, Tensor* grad_output) {
 }
 \end{lstlisting}
 
-\section{Funções de Ativação com Autograd}
+\section{Funcoes de Ativacao com Autograd}
 
 \subsection{ReLU e Leaky ReLU}
 
@@ -726,7 +739,7 @@ Tensor* relu_forward(Tensor* x) {
         out->requires_grad = 1;
         out->grad_node = autograd_node_create(OP_RELU, 1, &x);
         out->grad_node->backward = relu_backward;
-        out->grad_node->op_ctx = (void*)x;  // Salva input para máscara
+        out->grad_node->op_ctx = (void*)x;  // Salva input para mascara
     }
     
     return out;
@@ -747,15 +760,15 @@ void relu_backward(AutogradNode* node) {
 }
 \end{lstlisting}
 
-\subsection{Softmax Estável Numericamente}
+\subsection{Softmax Estavel Numericamente}
 
-Softmax pode sofrer overflow/underflow. A versão estável subtrai o máximo:
+Softmax pode sofrer overflow/underflow. A versao estavel subtrai o maximo:
 
 \[
 p_i = \frac{e^{z_i - \max(z)}}{\sum_j e^{z_j - \max(z)}}
 \]
 
-\begin{lstlisting}[language=C, caption=Softmax estável e seu gradiente]
+\begin{lstlisting}[language=C, caption=Softmax estavel e seu gradiente]
 Tensor* softmax_forward(Tensor* x, int dim) {
     // Assume x shape: [batch_size, n_classes]
     int batch_size = x->shape[0];
@@ -764,7 +777,7 @@ Tensor* softmax_forward(Tensor* x, int dim) {
     Tensor* out = tensor_create_like(x);
     
     for(int b = 0; b < batch_size; b++) {
-        // Encontra máximo para estabilidade numérica
+        // Encontra maximo para estabilidade numerica
         float max_val = x->data[b * n_classes];
         for(int c = 1; c < n_classes; c++) {
             if(x->data[b * n_classes + c] > max_val) {
@@ -818,18 +831,18 @@ Tensor* softmax_backward(Tensor* out, Tensor* grad_out) {
 \end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Redes Convolucionais: Implementação Profunda}
+\chapter{Redes Convolucionais: Implementacao Profunda}
 
-\section{Fundamentos da Convolução Discreta}
+\section{Fundamentos da Convolucao Discreta}
 
-Convolução 2D discreta para imagens:
+Convolucao 2D discreta para imagens:
 \[
 (I * K)(i,j) = \sum_{m=0}^{M-1} \sum_{n=0}^{N-1} I(i+m, j+n) \cdot K(m,n)
 \]
 
-\subsection{Implementação Ingênua vs Otimizada}
+\subsection{Implementacao Ingênua vs Otimizada}
 
-\begin{lstlisting}[language=C, caption=Convolução 2D com 6 loops]
+\begin{lstlisting}[language=C, caption=Convolucao 2D com 6 loops]
 typedef struct Conv2D {
     Tensor* weight;  // [out_channels, in_channels, kernel_h, kernel_w]
     Tensor* bias;    // [out_channels]
@@ -852,14 +865,14 @@ Tensor* conv2d_forward(Conv2D* layer, Tensor* input) {
     int k_h = layer->weight->shape[2];
     int k_w = layer->weight->shape[3];
     
-    // Calcula dimensões de saída
+    // Calcula dimensoes de saida
     int out_h = (in_h + 2*layer->padding - k_h) / layer->stride + 1;
     int out_w = (in_w + 2*layer->padding - k_w) / layer->stride + 1;
     
     int out_shape[] = {batch, out_c, out_h, out_w};
     Tensor* out = tensor_create(out_shape, 4);
     
-    // Aplica padding se necessário
+    // Aplica padding se necessario
     Tensor* input_padded = input;
     if(layer->padding > 0) {
         input_padded = tensor_pad(input, layer->padding);
@@ -902,11 +915,11 @@ Tensor* conv2d_forward(Conv2D* layer, Tensor* input) {
 }
 \end{lstlisting}
 
-\section{Backpropagation em Convolução}
+\section{Backpropagation em Convolucao}
 
-O backward da convolução é notoriamente complexo. Podemos implementar como convolução com rotação de kernels.
+O backward da convolucao e notoriamente complexo. Podemos implementar como convolucao com rotacao de kernels.
 
-\begin{lstlisting}[language=C, caption=Backward da convolução]
+\begin{lstlisting}[language=C, caption=Backward da convolucao]
 void conv2d_backward(Conv2D* layer, Tensor* grad_output) {
     // grad_output: [batch, out_c, out_h, out_w]
     int batch = grad_output->shape[0];
@@ -970,7 +983,7 @@ void conv2d_backward(Conv2D* layer, Tensor* grad_output) {
         }
     }
     
-    // grad_input: convolução transposta (full convolution)
+    // grad_input: convolucao transposta (full convolution)
     if(layer->input->requires_grad) {
         // Implementar conv2d_transpose
         Tensor* grad_input = conv2d_transpose(grad_output, layer->weight, 
@@ -982,11 +995,11 @@ void conv2d_backward(Conv2D* layer, Tensor* grad_output) {
 }
 \end{lstlisting}
 
-\section{Otimizações: Im2Col e GEMM}
+\section{Otimizacoes: Im2Col e GEMM}
 
-A abordagem de 6 loops é muito lenta. Podemos converter convolução em multiplicação de matrizes:
+A abordagem de 6 loops e muito lenta. Podemos converter convolucao em multiplicacao de matrizes:
 
-\begin{lstlisting}[language=C, caption=Algoritmo im2col para convolução otimizada]
+\begin{lstlisting}[language=C, caption=Algoritmo im2col para convolucao otimizada]
 Tensor* im2col(Tensor* im, int k_h, int k_w, int stride, int pad) {
     // im: [batch, channels, h, w]
     int batch = im->shape[0];
@@ -997,7 +1010,7 @@ Tensor* im2col(Tensor* im, int k_h, int k_w, int stride, int pad) {
     int out_h = (h + 2*pad - k_h) / stride + 1;
     int out_w = (w + 2*pad - k_w) / stride + 1;
     
-    // Matriz de saída: [batch * out_h * out_w, channels * k_h * k_w]
+    // Matriz de saida: [batch * out_h * out_w, channels * k_h * k_w]
     int col_shape[] = {batch * out_h * out_w, channels * k_h * k_w};
     Tensor* col = tensor_create(col_shape, 2);
     
@@ -1032,7 +1045,7 @@ Tensor* im2col(Tensor* im, int k_h, int k_w, int stride, int pad) {
 }
 
 Tensor* conv2d_im2col(Conv2D* layer, Tensor* input) {
-    // Converte para multiplicação de matrizes
+    // Converte para multiplicacao de matrizes
     Tensor* col = im2col(input, layer->weight->shape[2], 
                         layer->weight->shape[3], 
                         layer->stride, layer->padding);
@@ -1058,7 +1071,7 @@ Tensor* conv2d_im2col(Conv2D* layer, Tensor* input) {
 \end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Otimizadores: Teoria e Implementação}
+\chapter{Otimizadores: Teoria e Implementacao}
 
 \section{Stochastic Gradient Descent (SGD)}
 
@@ -1129,7 +1142,7 @@ void sgd_step(SGD* opt) {
 
 \section{Adam: Adaptive Moment Estimation}
 
-Adam combina momentum com adaptação de taxa de aprendizado por parâmetro:
+Adam combina momentum com adaptacao de taxa de aprendizado por parametro:
 
 \begin{align*}
 m_t &= \beta_1 m_{t-1} + (1-\beta_1) g_t \\
@@ -1139,7 +1152,7 @@ v_t &= \beta_2 v_{t-1} + (1-\beta_2) g_t^2 \\
 \theta_{t+1} &= \theta_t - \eta \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}
 \end{align*}
 
-\begin{lstlisting}[language=C, caption=Implementação completa do Adam]
+\begin{lstlisting}[language=C, caption=Implementacao completa do Adam]
 typedef struct Adam {
     float lr;
     float beta1;
@@ -1148,7 +1161,7 @@ typedef struct Adam {
     
     Tensor** m;  // Primeiro momento
     Tensor** v;  // Segundo momento
-    int* t;      // Timestep para cada parâmetro
+    int* t;      // Timestep para cada parametro
     int n_params;
 } Adam;
 
@@ -1196,11 +1209,11 @@ void adam_step(Adam* opt) {
             m->data[j] = opt->beta1 * m->data[j] + (1 - opt->beta1) * g;
             v->data[j] = opt->beta2 * v->data[j] + (1 - opt->beta2) * g * g;
             
-            // Correção de viés
+            // Correcao de vies
             float m_hat = m->data[j] / bias_correction1;
             float v_hat = v->data[j] / bias_correction2;
             
-            // Atualiza parâmetro
+            // Atualiza parametro
             param->data[j] -= opt->lr * m_hat / (sqrtf(v_hat) + opt->eps);
         }
     }
@@ -1208,7 +1221,7 @@ void adam_step(Adam* opt) {
 \end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Treinamento e Validação}
+\chapter{Treinamento e Validacao}
 
 \section{DataLoader e Batching}
 
@@ -1365,11 +1378,11 @@ void trainer_validate(Trainer* trainer, DataLoader* val_loader) {
 \end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Serialização e Persistência de Modelos}
+\chapter{Serializacao e Persistencia de Modelos}
 
 \section{Salvando e Carregando Modelos}
 
-Formato binário portável com metadados:
+Formato binario portavel com metadados:
 
 \begin{lstlisting}[language=C, caption=Save/Load completo]
 typedef struct ModelHeader {
@@ -1410,13 +1423,13 @@ void model_save(MLP* model, const char* filename) {
         int layer_type = 0; // 0: linear, 1: conv2d, etc.
         fwrite(&layer_type, sizeof(int), 1, fp);
         
-        // Parâmetros da camada
+        // Parametros da camada
         int in_features = layer->weights->shape[1];
         int out_features = layer->weights->shape[0];
         fwrite(&in_features, sizeof(int), 1, fp);
         fwrite(&out_features, sizeof(int), 1, fp);
         
-        // Ativação
+        // Ativacao
         fwrite(&layer->activation, sizeof(char), 1, fp);
         
         // Pesos e bias
@@ -1438,7 +1451,7 @@ MLP* model_load(const char* filename) {
     
     if(header.magic[0] != 'D' || header.magic[1] != 'L' ||
        header.magic[2] != 'F' || header.magic[3] != 'W') {
-        printf("Formato de arquivo inválido\n");
+        printf("Formato de arquivo invalido\n");
         return NULL;
     }
     
@@ -1474,11 +1487,11 @@ MLP* model_load(const char* filename) {
 \end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Estudos de Caso e Projetos Práticos}
+\chapter{Estudos de Caso e Projetos Praticos}
 
 \section{Exemplo 1: MNIST do Zero}
 
-Implementação completa de reconhecimento de dígitos:
+Implementacao completa de reconhecimento de digitos:
 
 \begin{lstlisting}[language=C, caption=MNIST pipeline completo]
 int main() {
@@ -1562,13 +1575,13 @@ Model* create_cifar10_cnn() {
 \end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Otimizações Avançadas e Performance}
+\chapter{Otimizacoes Avancadas e Performance}
 
 \section{BLAS-Level Optimizations}
 
 \subsection{Tiling para Cache L1/L2}
 
-\begin{lstlisting}[language=C, caption=Multiplicação de matrizes com tiling]
+\begin{lstlisting}[language=C, caption=Multiplicacao de matrizes com tiling]
 #define BLOCK_SIZE 32
 
 void matmul_tiled(Tensor* a, Tensor* b, Tensor* out, 
@@ -1598,7 +1611,7 @@ void matmul_tiled(Tensor* a, Tensor* b, Tensor* out,
 
 \subsection{SIMD Intrinsics}
 
-\begin{lstlisting}[language=C, caption=Usando SSE/AVX para operações vetoriais]
+\begin{lstlisting}[language=C, caption=Usando SSE/AVX para operacoes vetoriais]
 #include <immintrin.h>
 
 void tensor_add_simd(float* a, float* b, float* out, int n) {
@@ -1631,7 +1644,7 @@ void tensor_add_simd(float* a, float* b, float* out, int n) {
 
 \section{Parallelism with OpenMP}
 
-\begin{lstlisting}[language=C, caption=Paralelização de operações]
+\begin{lstlisting}[language=C, caption=Paralelizacao de operacoes]
 #include <omp.h>
 
 void conv2d_parallel(Conv2D* layer, Tensor* input, Tensor* output) {
@@ -1645,7 +1658,7 @@ void conv2d_parallel(Conv2D* layer, Tensor* input, Tensor* output) {
         for(int oc = 0; oc < out_c; oc++) {
             for(int oh = 0; oh < out_h; oh++) {
                 for(int ow = 0; ow < out_w; ow++) {
-                    // Cálculo da convolução
+                    // Calculo da convolucao
                     // ...
                 }
             }
@@ -1655,11 +1668,11 @@ void conv2d_parallel(Conv2D* layer, Tensor* input, Tensor* output) {
 \end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Próximos Passos: Além do Framework}
+\chapter{Proximos Passos: Alem do Framework}
 
 \section{Suporte a GPU com CUDA}
 
-\begin{lstlisting}[language=C, caption=Interface CUDA para operações]
+\begin{lstlisting}[language=C, caption=Interface CUDA para operacoes]
 #ifdef USE_CUDA
 #include <cuda_runtime.h>
 
@@ -1673,7 +1686,7 @@ __global__ void relu_kernel(float* x, float* out, int n) {
 void relu_cuda(Tensor* x, Tensor* out) {
     float* d_x, d_out;
     
-    // Alocar memória na GPU
+    // Alocar memoria na GPU
     cudaMalloc(&d_x, x->size * sizeof(float));
     cudaMalloc(&d_out, out->size * sizeof(float));
     
@@ -1681,7 +1694,7 @@ void relu_cuda(Tensor* x, Tensor* out) {
     cudaMemcpy(d_x, x->data, x->size * sizeof(float), 
                cudaMemcpyHostToDevice);
     
-    // Lançar kernel
+    // Lancar kernel
     int block_size = 256;
     int num_blocks = (x->size + block_size - 1) / block_size;
     relu_kernel<<<num_blocks, block_size>>>(d_x, d_out, x->size);
@@ -1690,16 +1703,16 @@ void relu_cuda(Tensor* x, Tensor* out) {
     cudaMemcpy(out->data, d_out, out->size * sizeof(float), 
                cudaMemcpyDeviceToHost);
     
-    // Liberar memória
+    // Liberar memoria
     cudaFree(d_x);
     cudaFree(d_out);
 }
 #endif
 \end{lstlisting}
 
-\section{Implementação de Transformers}
+\section{Implementacao de Transformers}
 
-Arquitetura completa de Transformer para processamento de sequências:
+Arquitetura completa de Transformer para processamento de sequencias:
 
 \begin{itemize}
     \item Multi-Head Self-Attention
@@ -1711,9 +1724,9 @@ Arquitetura completa de Transformer para processamento de sequências:
 
 \section{Mixed Precision Training}
 
-Implementação de treinamento com FP16 para maior performance:
+Implementacao de treinamento com FP16 para maior performance:
 
-\begin{lstlisting}[language=C, caption=Cast de precisão mista]
+\begin{lstlisting}[language=C, caption=Cast de precisao mista]
 void convert_to_fp16(float* fp32, __fp16* fp16, int n) {
     for(int i = 0; i < n; i++) {
         fp16[i] = (__fp16)fp32[i];
@@ -1734,7 +1747,7 @@ void matmul_mixed(Tensor* a_fp32, Tensor* b_fp32, Tensor* out_fp32) {
     convert_to_fp16(a_fp32->data, a_fp16, a_fp32->size);
     convert_to_fp16(b_fp32->data, b_fp16, b_fp32->size);
     
-    // Multiplicação em FP16 (usando hardware nativo)
+    // Multiplicacao em FP16 (usando hardware nativo)
     __fp16* out_fp16 = malloc(out_fp32->size * sizeof(__fp16));
     matmul_fp16(a_fp16, b_fp16, out_fp16, /* dims */);
     
@@ -1748,25 +1761,25 @@ void matmul_mixed(Tensor* a_fp32, Tensor* b_fp32, Tensor* out_fp32) {
 \end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter*{Conclusão}
+\chapter*{Conclusao}
 
-Você agora tem em mãos um framework completo de deep learning implementado em C puro, com:
+Voce agora tem em maos um framework completo de deep learning implementado em C puro, com:
 
 \begin{itemize}
-    \item Sistema de tensores com gerenciamento de memória
-    \item Autograd com grafo computacional dinâmico
+    \item Sistema de tensores com gerenciamento de memoria
+    \item Autograd com grafo computacional dinamico
     \item Camadas: Linear, Conv2D, BatchNorm, Dropout
-    \item Ativações: ReLU, Sigmoid, Tanh, Softmax
+    \item Ativacoes: ReLU, Sigmoid, Tanh, Softmax
     \item Otimizadores: SGD, Adam
-    \item Funções de custo: MSE, Cross-Entropy
+    \item Funcoes de custo: MSE, Cross-Entropy
     \item DataLoaders e batching
-    \item Serialização de modelos
-    \item Otimizações de performance: SIMD, OpenMP, CUDA
+    \item Serializacao de modelos
+    \item Otimizacoes de performance: SIMD, OpenMP, CUDA
 \end{itemize}
 
-Este código é completamente funcional e pode ser usado para treinar redes neurais reais em problemas como MNIST, CIFAR-10, e até mesmo tarefas mais complexas.
+Este codigo e completamente funcional e pode ser usado para treinar redes neurais reais em problemas como MNIST, CIFAR-10, e ate mesmo tarefas mais complexas.
 
-O próximo passo é expandir para arquiteturas modernas como Transformers, GANs, e modelos de difusão, sempre mantendo a filosofia de implementar cada detalhe do zero para compreensão profunda.
+O proximo passo e expandir para arquiteturas modernas como Transformers, GANs, e modelos de difusao, sempre mantendo a filosofia de implementar cada detalhe do zero para compreensao profunda.
 
 \vspace{1cm}
 \noindent

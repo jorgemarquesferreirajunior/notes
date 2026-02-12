@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.23)  12 FEB 2026 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.23)  12 FEB 2026 15:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -29,6 +29,51 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 )
+(C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+)
+(C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/05/14 v25.9 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
+\babel@savecnt=\count284
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2043.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2045.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2047.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2048.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2049.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2051.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2076.
+\U@D=\dimen149
+\l@unhyphenated=\language79
+
+(C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count285
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\portug
+uese.ldf
+Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
+
+(C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/pt\bab
+el-portuguese.tex
+Package babel Info: Importing font and identification data for portuguese
+(babel)             from babel-pt.ini. Reported on input line 11.
+)
+Package babel Info: Making " an active character on input line 143.
+))
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip51
@@ -40,23 +85,23 @@ Package: amstext 2024/11/17 v2.01 AMS text
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen149
+\ex@=\dimen150
 ))
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen150
+\pmbraise@=\dimen151
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count284
+\inf@bad=\count286
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count285
-\leftroot@=\count286
+\uproot@=\count287
+\leftroot@=\count288
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count287
-\DOTSCASE@=\count288
+\classnum@=\count289
+\DOTSCASE@=\count290
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -66,30 +111,30 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen151
+\big@size=\dimen152
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count289
+\macc@depth=\count291
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count290
+\c@MaxMatrixCols=\count292
 \dotsspace@=\muskip17
-\c@parentequation=\count291
-\dspbrk@lvl=\count292
+\c@parentequation=\count293
+\dspbrk@lvl=\count294
 \tag@help=\toks20
-\row@=\count293
-\column@=\count294
-\maxfields@=\count295
+\row@=\count295
+\column@=\count296
+\maxfields@=\count297
 \andhelp@=\toks21
-\eqnshift@=\dimen152
-\alignsep@=\dimen153
-\tagshift@=\dimen154
-\tagwidth@=\dimen155
-\totwidth@=\dimen156
-\lineht@=\dimen157
+\eqnshift@=\dimen153
+\alignsep@=\dimen154
+\tagshift@=\dimen155
+\tagwidth@=\dimen156
+\totwidth@=\dimen157
+\lineht@=\dimen158
 \@envbody=\toks22
 \multlinegap=\skip52
 \multlinetaggap=\skip53
@@ -131,42 +176,42 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count296
-\Gm@cntv=\count297
-\c@Gm@tempcnt=\count298
-\Gm@bindingoffset=\dimen158
-\Gm@wd@mp=\dimen159
-\Gm@odd@mp=\dimen160
-\Gm@even@mp=\dimen161
-\Gm@layoutwidth=\dimen162
-\Gm@layoutheight=\dimen163
-\Gm@layouthoffset=\dimen164
-\Gm@layoutvoffset=\dimen165
+\Gm@cnth=\count298
+\Gm@cntv=\count299
+\c@Gm@tempcnt=\count300
+\Gm@bindingoffset=\dimen159
+\Gm@wd@mp=\dimen160
+\Gm@odd@mp=\dimen161
+\Gm@even@mp=\dimen162
+\Gm@layoutwidth=\dimen163
+\Gm@layoutheight=\dimen164
+\Gm@layouthoffset=\dimen165
+\Gm@layoutvoffset=\dimen166
 \Gm@dimlist=\toks31
 
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg
 ))
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count299
+\lst@mode=\count301
 \lst@gtempboxa=\box55
 \lst@token=\toks32
-\lst@length=\count300
-\lst@currlwidth=\dimen166
-\lst@column=\count301
-\lst@pos=\count302
-\lst@lostspace=\dimen167
-\lst@width=\dimen168
-\lst@newlines=\count303
-\lst@lineno=\count304
-\lst@maxwidth=\dimen169
+\lst@length=\count302
+\lst@currlwidth=\dimen167
+\lst@column=\count303
+\lst@pos=\count304
+\lst@lostspace=\dimen168
+\lst@width=\dimen169
+\lst@newlines=\count305
+\lst@lineno=\count306
+\lst@maxwidth=\dimen170
 
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count305
-\lst@skipnumbers=\count306
+\c@lstnumber=\count307
+\lst@skipnumbers=\count308
 \lst@framebox=\box56
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
@@ -222,20 +267,20 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 ty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count307
+\c@section@level=\count309
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count308
+\etb@tempcnta=\count310
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc
 .sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen170
-\Hy@linkcounter=\count309
-\Hy@pagecounter=\count310
+\@linkdim=\dimen171
+\Hy@linkcounter=\count311
+\Hy@pagecounter=\count312
 
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-05-20 v7.01m Hyperref: PDFDocEncoding definition (HO)
@@ -245,7 +290,7 @@ Now handling font encoding PD1 ...
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count311
+\Hy@SavedSpaceFactor=\count313
  (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-05-20 v7.01m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -258,13 +303,13 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count312
+\c@Hy@tempcnt=\count314
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen171
+\XeTeXLinkMargin=\dimen172
 
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -274,9 +319,9 @@ lc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count313
-\Field@Width=\dimen172
-\Fld@charsize=\dimen173
+\Fld@menulength=\count315
+\Field@Width=\dimen173
+\Fld@charsize=\dimen174
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -289,16 +334,16 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count314
-\c@Item=\count315
-\c@Hfootnote=\count316
+\Hy@abspage=\count316
+\c@Item=\count317
+\c@Hfootnote=\count318
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-05-20 v7.01m Hyperref driver for pdfTeX
-\Fld@listcount=\count317
-\c@bookmark@seq@number=\count318
+\Fld@listcount=\count319
+\c@bookmark@seq@number=\count320
 
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunf
 ilecheck.sty
@@ -337,8 +382,8 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
 ef
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen174
-\Gin@req@width=\dimen175
+\Gin@req@height=\dimen175
+\Gin@req@width=\dimen176
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.
 sty
@@ -346,7 +391,7 @@ Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
  (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count319
+\c@float@type=\count321
 \float@exts=\toks33
 \float@box=\box57
 \@float@everytoks=\toks34
@@ -356,7 +401,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks35
-\c@algorithm=\count320
+\c@algorithm=\count322
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algpseud
 ocode.sty
@@ -367,15 +412,15 @@ micx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count321
-\c@ALG@rem=\count322
-\c@ALG@nested=\count323
+\c@ALG@line=\count323
+\c@ALG@rem=\count324
+\c@ALG@nested=\count325
 \ALG@tlm=\skip58
 \ALG@thistlm=\skip59
-\c@ALG@Lnr=\count324
-\c@ALG@blocknr=\count325
-\c@ALG@storecount=\count326
-\c@ALG@tmpcounter=\count327
+\c@ALG@Lnr=\count326
+\c@ALG@blocknr=\count327
+\c@ALG@storecount=\count328
+\c@ALG@tmpcounter=\count329
 \ALG@tmplength=\skip60
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -399,8 +444,8 @@ sty
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfut
 il-common.tex
 \pgfutil@everybye=\toks36
-\pgfutil@tempdima=\dimen176
-\pgfutil@tempdimb=\dimen177
+\pgfutil@tempdima=\dimen177
+\pgfutil@tempdimb=\dimen178
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfut
 il-latex.def
@@ -431,26 +476,26 @@ ys.code.tex
 yslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks39
 ))
-\pgf@x=\dimen178
-\pgf@y=\dimen179
-\pgf@xa=\dimen180
-\pgf@ya=\dimen181
-\pgf@xb=\dimen182
-\pgf@yb=\dimen183
-\pgf@xc=\dimen184
-\pgf@yc=\dimen185
-\pgf@xd=\dimen186
-\pgf@yd=\dimen187
+\pgf@x=\dimen179
+\pgf@y=\dimen180
+\pgf@xa=\dimen181
+\pgf@ya=\dimen182
+\pgf@xb=\dimen183
+\pgf@yb=\dimen184
+\pgf@xc=\dimen185
+\pgf@yc=\dimen186
+\pgf@xd=\dimen187
+\pgf@yd=\dimen188
 \w@pgf@writea=\write3
-\r@pgf@reada=\read2
-\c@pgf@counta=\count328
-\c@pgf@countb=\count329
-\c@pgf@countc=\count330
-\c@pgf@countd=\count331
+\r@pgf@reada=\read3
+\c@pgf@counta=\count330
+\c@pgf@countb=\count331
+\c@pgf@countc=\count332
+\c@pgf@countd=\count333
 \t@pgf@toka=\toks40
 \t@pgf@tokb=\toks41
 \t@pgf@tokc=\toks42
-\pgf@sys@id@count=\count332
+\pgf@sys@id@count=\count334
 
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
 .cfg
@@ -469,8 +514,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
 syssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count333
-\pgfsyssoftpath@bigbuffer@items=\count334
+\pgfsyssoftpath@smallbuffer@items=\count335
+\pgfsyssoftpath@bigbuffer@items=\count336
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
 sysprotocol.code.tex
@@ -508,8 +553,8 @@ de.tex
 l.code.tex)
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathpar
 ser.code.tex
-\pgfmath@dimen=\dimen188
-\pgfmath@count=\count335
+\pgfmath@dimen=\dimen189
+\pgfmath@count=\count337
 \pgfmath@box=\box60
 \pgfmath@toks=\toks43
 \pgfmath@stack@operand=\toks44
@@ -537,39 +582,39 @@ ctions.integerarithmetics.code.tex)
 c.code.tex)
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathflo
 at.code.tex
-\c@pgfmathroundto@lastzeros=\count336
+\c@pgfmathroundto@lastzeros=\count338
 ))
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.cod
 e.tex)
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
 orepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen189
-\pgf@picmaxx=\dimen190
-\pgf@picminy=\dimen191
-\pgf@picmaxy=\dimen192
-\pgf@pathminx=\dimen193
-\pgf@pathmaxx=\dimen194
-\pgf@pathminy=\dimen195
-\pgf@pathmaxy=\dimen196
-\pgf@xx=\dimen197
-\pgf@xy=\dimen198
-\pgf@yx=\dimen199
-\pgf@yy=\dimen256
-\pgf@zx=\dimen257
-\pgf@zy=\dimen258
+\pgf@picminx=\dimen190
+\pgf@picmaxx=\dimen191
+\pgf@picminy=\dimen192
+\pgf@picmaxy=\dimen193
+\pgf@pathminx=\dimen194
+\pgf@pathmaxx=\dimen195
+\pgf@pathminy=\dimen196
+\pgf@pathmaxy=\dimen197
+\pgf@xx=\dimen198
+\pgf@xy=\dimen199
+\pgf@yx=\dimen256
+\pgf@yy=\dimen257
+\pgf@zx=\dimen258
+\pgf@zy=\dimen259
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
 orepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen259
-\pgf@path@lasty=\dimen260
+\pgf@path@lastx=\dimen260
+\pgf@path@lasty=\dimen261
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
 orepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen261
-\pgf@shorten@start@additional=\dimen262
+\pgf@shorten@end@additional=\dimen262
+\pgf@shorten@start@additional=\dimen263
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
 orescopes.code.tex
@@ -577,19 +622,19 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box61
 \pgf@hbox=\box62
 \pgf@layerbox@main=\box63
-\pgf@picture@serial@count=\count337
+\pgf@picture@serial@count=\count339
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
 oregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen263
+\pgflinewidth=\dimen264
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
 oretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen264
-\pgf@pt@y=\dimen265
-\pgf@pt@temp=\dimen266
+\pgf@pt@x=\dimen265
+\pgf@pt@y=\dimen266
+\pgf@pt@temp=\dimen267
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
 orequick.code.tex
@@ -606,14 +651,14 @@ File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
 orearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen267
+\pgfarrowsep=\dimen268
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
 oreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen268
-\pgf@sys@shading@range@num=\count338
-\pgf@shadingcount=\count339
+\pgf@max=\dimen269
+\pgf@sys@shading@range@num=\count340
+\pgf@shadingcount=\count341
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
 oreimage.code.tex
@@ -652,8 +697,8 @@ File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgf
 comp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen269
-\pgf@nodesepend=\dimen270
+\pgf@nodesepstart=\dimen270
+\pgf@nodesepend=\dimen271
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgf
 comp-version-1-18.sty
@@ -671,8 +716,8 @@ de.tex))
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffo
 r.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen271
-\pgffor@skip=\dimen272
+\pgffor@iter=\dimen272
+\pgffor@skip=\dimen273
 \pgffor@stack=\toks46
 \pgffor@toks=\toks47
 ))
@@ -683,34 +728,34 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfli
 braryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count340
-\pgfplotmarksize=\dimen273
+\pgf@plot@mark@count=\count342
+\pgfplotmarksize=\dimen274
 )
-\tikz@lastx=\dimen274
-\tikz@lasty=\dimen275
-\tikz@lastxsaved=\dimen276
-\tikz@lastysaved=\dimen277
-\tikz@lastmovetox=\dimen278
-\tikz@lastmovetoy=\dimen279
-\tikzleveldistance=\dimen280
-\tikzsiblingdistance=\dimen281
+\tikz@lastx=\dimen275
+\tikz@lasty=\dimen276
+\tikz@lastxsaved=\dimen277
+\tikz@lastysaved=\dimen278
+\tikz@lastmovetox=\dimen279
+\tikz@lastmovetoy=\dimen280
+\tikzleveldistance=\dimen281
+\tikzsiblingdistance=\dimen282
 \tikz@figbox=\box66
 \tikz@figbox@bg=\box67
 \tikz@tempbox=\box68
 \tikz@tempbox@bg=\box69
-\tikztreelevel=\count341
-\tikznumberofchildren=\count342
-\tikznumberofcurrentchild=\count343
-\tikz@fig@count=\count344
+\tikztreelevel=\count343
+\tikznumberofchildren=\count344
+\tikznumberofcurrentchild=\count345
+\tikz@fig@count=\count346
 
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodu
 lematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count345
-\pgfmatrixcurrentcolumn=\count346
-\pgf@matrix@numberofcolumns=\count347
+\pgfmatrixcurrentrow=\count347
+\pgfmatrixcurrentcolumn=\count348
+\pgf@matrix@numberofcolumns=\count349
 )
-\tikz@expandcount=\count348
+\tikz@expandcount=\count350
 
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/t
 ikz/libraries\tikzlibrarytopaths.code.tex
@@ -795,7 +840,7 @@ File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfli
 braryarrows.code.tex
 File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen282
+\arrowsize=\dimen283
 ))
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/t
 ikz/libraries\tikzlibrarycalc.code.tex
@@ -807,37 +852,40 @@ File: lstlang1.sty 2024/09/23 1.10c listings language file
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 )
-\c@definition=\count349
-\c@theorem=\count350
-\c@lemma=\count351
-\c@corollary=\count352
-\c@example=\count353
+\c@definition=\count351
+\c@theorem=\count352
+\c@lemma=\count353
+\c@corollary=\count354
+\c@example=\count355
 
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-p
 dftex.def
 File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count354
-) (framework_ml_em_c_master.aux)
+\l__color_backend_stack_int=\count356
+) (framework_ml_em_c_master.aux
+Package babel Info: 'portuguese' activates 'portuges' shorthands.
+(babel)             Reported  on input line 8.
+)
 \openout1 = `framework_ml_em_c_master.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -873,8 +921,8 @@ LaTeX Font Info:    ... okay on input line 57.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count355
-Package hyperref Info: Link coloring OFF on input line 57.
+\c@lstlisting=\count357
+Package hyperref Info: Link coloring OFF on input line 70.
 (framework_ml_em_c_master.out) (framework_ml_em_c_master.out)
 \@outlinefile=\write4
 \openout4 = `framework_ml_em_c_master.out'.
@@ -883,16 +931,16 @@ Package hyperref Info: Link coloring OFF on input line 57.
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.
 mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count356
-\scratchdimen=\dimen283
+\scratchcounter=\count358
+\scratchdimen=\dimen284
 \scratchbox=\box90
-\nofMPsegments=\count357
-\nofMParguments=\count358
+\nofMPsegments=\count359
+\nofMParguments=\count360
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count359
-\MPscratchDim=\dimen284
-\MPnumerator=\count360
-\makeMPintoPDFobject=\count361
+\MPscratchCnt=\count361
+\MPscratchDim=\dimen285
+\MPnumerator=\count362
+\makeMPintoPDFobject=\count363
 \everyMPtoPDFconversion=\toks49
 )
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf
@@ -905,13 +953,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 .cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
 
 
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
 
 
 (C:\Users\Scope11\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -927,60 +975,33 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] (framework_ml_em_c_master.toc
 
-[3])
+[3]
+
+Package babel Info: 'portuguese' activates 'portuges' shorthands.
+(babel)             Reported  on input line 49.
+[4])
 \tf@toc=\write5
 \openout5 = `framework_ml_em_c_master.toc'.
 
 
 
-[4]
-
-[5
-
-]
+[5]
 
 [6
 
 ]
-Chapter 1.
-
-Overfull \hbox (12.98764pt too wide) in paragraph at lines 88--89
-\OT1/cmr/m/n/12 um prob-lema de otimiza^^Xc~ao. Dado um con-junto de da-dos $\O
-MS/cmsy/m/n/12 D \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (\OT1/cmr/
-bx/n/12 x[]\OML/cmm/m/it/12 ; y[]\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 g[]$
- []
-
-
-Overfull \hbox (1.0772pt too wide) in paragraph at lines 94--95
-[]\OT1/cmr/m/n/12 Na pr^^Satica, como $\OML/cmm/m/it/12 p[]$ \OT1/cmr/m/n/12 ^^
-Se de-scon-hecida, aprox-i-mamos pelo risco emp^^S^^Prico: 
- []
-
-
-Overfull \hbox (0.86719pt too wide) in paragraph at lines 105--106
-[][]\OT1/cmr/bx/n/12 Teorema 1.1 \OT1/cmr/m/n/12 (Aprox-ima^^Xc~ao Uni-ver-sal)
-\OT1/cmr/bx/n/12 . []\OT1/cmr/m/it/12 Seja $\OML/cmm/m/it/12 ^^[$ \OT1/cmr/m/it
-/12 uma fun^^Xc~ao de ativa^^Xc~ao
- []
-
-
 
 [7]
-Overfull \hbox (24.4778pt too wide) in paragraph at lines 112--112
-[]\OT1/cmr/bx/n/17.28 Deriva^^Xc~ao De-tal-hada da Fun^^Xc~ao de Custo 
- []
 
+[8
 
+]
+Cap\'{\i }tulo 1.
 
-
-Overfull \hbox (100.26616pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 8 \OT1/cmr/m/sl/12 CHAPTER 1.  FUNDAMENTOS MATEM[]ATICOS E TE[]
-ORICOS DO APRENDIZADO
- []
-
-[8]
-Overfull \hbox (1.22783pt too wide) in paragraph at lines 186--186
-[]\OT1/cmr/bx/n/17.28 Regra da Cadeia Ve-to-rial e Ja-co-bianos 
+Overfull \hbox (12.9202pt too wide) in paragraph at lines 101--102
+\T1/cmr/m/n/12 um pro-blema de oti-mi-za-cao. Dado um con-junto de da-dos $\OMS
+/cmsy/m/n/12 D \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (\OT1/cmr/bx
+/n/12 x[]\OML/cmm/m/it/12 ; y[]\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 g[]$
  []
 
 
@@ -988,392 +1009,64 @@ Overfull \hbox (1.22783pt too wide) in paragraph at lines 186--186
 [9]
 
 
-Overfull \hbox (106.1411pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 10 \OT1/cmr/m/sl/12 CHAPTER 1.  FUNDAMENTOS MATEM[]ATICOS E TE[
-]ORICOS DO APRENDIZADO
+Overfull \hbox (109.12938pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 10 \T1/cmr/m/sl/12 CAP�TULO 1.  FUNDAMENTOS MATEMATICOS E TEORIC
+OS DO APRENDIZADO
  []
 
 [10]
-Chapter 2.
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 206.
 
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.214 ...loat* data;          // Dados contíguos 
-                                                  em memória
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "AD.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.214 ...loat* data;          // Dados contíguos 
-                                                  em memória
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.214 ...          // Dados contíguos em memória
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "B3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.214 ...          // Dados contíguos em memória
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.216     int* shape;           // Dimensões 
-                                              do tensor (ex: [3,224,224])
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "B5.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.216     int* shape;           // Dimensões 
-                                              do tensor (ex: [3,224,224])
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.217     int ndim;             // Número 
-                                           de dimensões
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "BA.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.217     int ndim;             // Número 
-                                           de dimensões
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.217 ...dim;             // Número de dimensões
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "B5.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.217 ...dim;             // Número de dimensões
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.218 ...ze;             // Produto das dimensões
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "B5.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.218 ...ze;             // Produto das dimensões
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.219 ...unt;         // Contagem de referências 
-                                                  para garbage collection
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "AA.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.219 ...unt;         // Contagem de referências 
-                                                  para garbage collection
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.221     // Para autograd (será 
-                                  expandido depois)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.221     // Para autograd (será 
-                                  expandido depois)
-? 
+[11]
 
 
-[11
-
-]
-
-
-Overfull \hbox (196.59457pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 12 \OT1/cmr/m/sl/12 CHAPTER 2.  IMPLEMENTA[][]AO BASE EM C: EST
-RUTURAS E GERENCIAMENTO DE MEM[]ORIA
+Overfull \hbox (109.12938pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 12 \T1/cmr/m/sl/12 CAP�TULO 1.  FUNDAMENTOS MATEMATICOS E TEORIC
+OS DO APRENDIZADO
  []
 
 [12]
-
-[13]
-Overfull \hbox (4.67584pt too wide) in paragraph at lines 315--315
-[]\OT1/cmr/bx/n/17.28 Estrat^^Segias de Otimiza^^Xc~ao de Mem^^Soria 
- []
+Cap\'{\i }tulo 2.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 219.
 
 
-
-
-Overfull \hbox (196.59457pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 14 \OT1/cmr/m/sl/12 CHAPTER 2.  IMPLEMENTA[][]AO BASE EM C: EST
-RUTURAS E GERENCIAMENTO DE MEM[]ORIA
- []
-
-[14]
-Chapter 3.
-
-
-[15
+[13
 
 ]
 
 
-Overfull \hbox (106.11743pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 16 \OT1/cmr/m/sl/12 CHAPTER 3.  REDE NEURAL: MATEM[]ATICA E IMP
-LEMENTA[][]AO DETALHADA
+Overfull \hbox (199.88803pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 14 \T1/cmr/m/sl/12 CAP�TULO 2.  IMPLEMENTACAO BASE EM C: ESTRUTU
+RAS E GERENCIAMENTO DE MEMORIA
+ []
+
+[14]
+
+[15]
+
+
+Overfull \hbox (199.88803pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 16 \T1/cmr/m/sl/12 CAP�TULO 2.  IMPLEMENTACAO BASE EM C: ESTRUTU
+RAS E GERENCIAMENTO DE MEMORIA
  []
 
 [16]
+Cap\'{\i }tulo 3.
 
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.416     Tensor* z;  // Pré-
-                              ativação
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A9.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.416     Tensor* z;  // Pré-
-                              ativação
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.416     Tensor* z;  // Pré-ativação
-                                        
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A7.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.416     Tensor* z;  // Pré-ativação
-                                        
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.416     Tensor* z;  // Pré-ativação
-                                        
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.416     Tensor* z;  // Pré-ativação
-                                        
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.433         // Gradiente dos parâmetros 
-                                           da camada atual
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A2.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.433         // Gradiente dos parâmetros 
-                                           da camada atual
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.451 .../ Multiplicar pela derivada da ativação
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A7.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.451 .../ Multiplicar pela derivada da ativação
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.451 .../ Multiplicar pela derivada da ativação
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.451 .../ Multiplicar pela derivada da ativação
-                                                  
-? 
-
-
-[17]
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.456             // ... outras ativações
-                                           
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A7.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.456             // ... outras ativações
-                                           
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.456             // ... outras ativações
-                                           
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "B5.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.456             // ... outras ativações
-                                           
-? 
-
-Overfull \hbox (0.93242pt too wide) in paragraph at lines 466--467
-\OT1/cmr/m/n/12 A ini-cial-iza^^Xc~ao cor-reta dos pe-sos ^^Se cr^^S^^Ptica par
-a evi-tar gra-di-entes desvane-
+Overfull \hbox (14.6214pt too wide) in paragraph at lines 379--379
+[]\T1/cmr/bx/n/17.28 Backpropagation: De-du-cao Passo a Passo 
  []
 
 
 
+[17
 
-Overfull \hbox (106.11743pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 18 \OT1/cmr/m/sl/12 CHAPTER 3.  REDE NEURAL: MATEM[]ATICA E IMP
-LEMENTA[][]AO DETALHADA
+]
+
+
+Overfull \hbox (108.45317pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 18 \T1/cmr/m/sl/12 CAP�TULO 3.  REDE NEURAL: MATEMATICA E IMPLEM
+ENTACAO DETALHADA
  []
 
 [18]
@@ -1381,344 +1074,52 @@ LEMENTA[][]AO DETALHADA
 [19]
 
 
-Overfull \hbox (106.11743pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 20 \OT1/cmr/m/sl/12 CHAPTER 3.  REDE NEURAL: MATEM[]ATICA E IMP
-LEMENTA[][]AO DETALHADA
+Overfull \hbox (108.45317pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 20 \T1/cmr/m/sl/12 CAP�TULO 3.  REDE NEURAL: MATEMATICA E IMPLEM
+ENTACAO DETALHADA
  []
 
-[20
-
-]
-Chapter 4.
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.512     // Função 
-                      que calcula gradientes dos pais
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A7.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.512     // Função 
-                      que calcula gradientes dos pais
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.512     // Função 
-                      que calcula gradientes dos pais
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.512     // Função 
-                      que calcula gradientes dos pais
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.515     // Metadados da operação
-                                    
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A7.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.515     // Metadados da operação
-                                    
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.515     // Metadados da operação
-                                    
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.515     // Metadados da operação
-                                    
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.517     void* op_ctx; // Contexto específico 
-                                                da operação
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "AD.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.517     void* op_ctx; // Contexto específico 
-                                                da operação
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.517 ...tx; // Contexto específico da operação
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A7.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.517 ...tx; // Contexto específico da operação
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.517 ...tx; // Contexto específico da operação
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.517 ...tx; // Contexto específico da operação
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.524 ...d_computed;  // Para evitar computação 
-                                                  duplicada
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A7.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.524 ...d_computed;  // Para evitar computação 
-                                                  duplicada
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.524 ...d_computed;  // Para evitar computação 
-                                                  duplicada
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.524 ...d_computed;  // Para evitar computação 
-                                                  duplicada
-? 
-
-Overfull \hbox (18.52776pt too wide) in paragraph at lines 528--528
-[]\OT1/cmr/bx/n/17.28 Implementa^^Xc~ao de Opera^^Xc~oes com Grafo 
- []
-
-
+[20]
 
 [21]
-Underfull \vbox (badness 1496) has occurred while \output is active []
 
 
+Overfull \hbox (108.45317pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 22 \T1/cmr/m/sl/12 CAP�TULO 3.  REDE NEURAL: MATEMATICA E IMPLEM
+ENTACAO DETALHADA
+ []
 
-[22]
-Overfull \hbox (6.69775pt too wide) in paragraph at lines 576--576
-[]\OT1/cmr/bx/n/17.28 Topological Sort e Propaga^^Xc~ao Re-versa 
+[22
+
+]
+Cap\'{\i }tulo 4.
+
+Overfull \hbox (3.93188pt too wide) in paragraph at lines 541--541
+[]\T1/cmr/bx/n/17.28 Implementacao de Ope-ra-coes com Grafo 
  []
 
 
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.587     // Coleta todos os nós 
-                                  do grafo via DFS
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "B3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.587     // Coleta todos os nós 
-                                  do grafo via DFS
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.592     // Ordenação 
-                         topológica (DFS reversa)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A7.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.592     // Ordenação 
-                         topológica (DFS reversa)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.592     // Ordenação 
-                         topológica (DFS reversa)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.592     // Ordenação 
-                         topológica (DFS reversa)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.592     // Ordenação topológica 
-                                     (DFS reversa)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "B3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.592     // Ordenação topológica 
-                                     (DFS reversa)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\lst@FillFixed@).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.611     // Adiciona à 
-                         lista
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A0.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.611     // Adiciona à 
-                         lista
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.616     // Recursão 
-                       nos pais
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.616     // Recursão 
-                       nos pais
-? 
 
 
 [23]
+Underfull \vbox (badness 1496) has occurred while \output is active []
+
+
 
 [24]
-Chapter 5.
+
+[25]
+
+[26]
+Cap\'{\i }tulo 5.
 
 Underfull \vbox (badness 1496) has occurred while \output is active []
 
 
 
-[25
+[27
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1726,81 +1127,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Overfull \hbox (22.26414pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 26 \OT1/cmr/m/sl/12 CHAPTER 5.  CAMADAS AVAN[]ADAS E FUN[][]OES
- DE ATIVA[][]AO
- []
-
-[26]
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.729 ...= (void*)x;  // Salva input para máscara
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.729 ...= (void*)x;  // Salva input para máscara
-                                                  
-? 
-
-
-[27]
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.767         // Encontra máximo 
-                                  para estabilidade numérica
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.767         // Encontra máximo 
-                                  para estabilidade numérica
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.767 ...ontra máximo para estabilidade numérica
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A9.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.767 ...ontra máximo para estabilidade numérica
-                                                  
-? 
-
-
-
-Overfull \hbox (22.26414pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 28 \OT1/cmr/m/sl/12 CHAPTER 5.  CAMADAS AVAN[]ADAS E FUN[][]OES
- DE ATIVA[][]AO
+Overfull \hbox (25.59853pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 28 \T1/cmr/m/sl/12 CAP�TULO 5.  CAMADAS AVANCADAS E FUNCOES DE A
+TIVACAO
  []
 
 [28]
@@ -1808,90 +1137,26 @@ Overfull \hbox (22.26414pt too wide) has occurred while \output is active
 [29]
 
 
-Overfull \hbox (22.26414pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 30 \OT1/cmr/m/sl/12 CHAPTER 5.  CAMADAS AVAN[]ADAS E FUN[][]OES
- DE ATIVA[][]AO
+Overfull \hbox (25.59853pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 30 \T1/cmr/m/sl/12 CAP�TULO 5.  CAMADAS AVANCADAS E FUNCOES DE A
+TIVACAO
  []
 
-[30
-
-]
-Chapter 6.
-
+[30]
 
 [31]
 
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.855     // Calcula dimensões 
-                                de saída
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "B5.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.855     // Calcula dimensões 
-                                de saída
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.855     // Calcula dimensões de saída
-                                         
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "AD.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.855     // Calcula dimensões de saída
-                                         
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.862     // Aplica padding se necessário
-                                          
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.862     // Aplica padding se necessário
-                                          
-? 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-
-Overfull \hbox (67.30095pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 32 \OT1/cmr/m/sl/12 CHAPTER 6.  REDES CONVOLUCIONAIS: IMPLEMENT
-A[][]AO PROFUNDA
+Overfull \hbox (25.59853pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 32 \T1/cmr/m/sl/12 CAP�TULO 5.  CAMADAS AVANCADAS E FUNCOES DE A
+TIVACAO
  []
 
-[32]
+[32
+
+]
+Cap\'{\i }tulo 6.
+
 
 [33]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1899,664 +1164,219 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Overfull \hbox (67.30095pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 34 \OT1/cmr/m/sl/12 CHAPTER 6.  REDES CONVOLUCIONAIS: IMPLEMENT
-A[][]AO PROFUNDA
+Overfull \hbox (70.6246pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 34 \T1/cmr/m/sl/12 CAP�TULO 6.  REDES CONVOLUCIONAIS: IMPLEMENTA
+CAO PROFUNDA
  []
 
 [34]
 
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.973     // grad_input: convolução 
-                                      transposta (full convolution)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A7.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.973     // grad_input: convolução 
-                                      transposta (full convolution)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.973     // grad_input: convolução 
-                                      transposta (full convolution)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.973     // grad_input: convolução 
-                                      transposta (full convolution)
-? 
-
-
 [35]
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1000     // Matriz de saída:
-                                [batch * out_h * out_w, channels * k_h * k_w]
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "AD.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1000     // Matriz de saída:
-                                [batch * out_h * out_w, channels * k_h * k_w]
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1035     // Converte para multiplicação 
-                                            de matrizes
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A7.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1035     // Converte para multiplicação 
-                                            de matrizes
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1035     // Converte para multiplicação 
-                                            de matrizes
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1035     // Converte para multiplicação 
-                                            de matrizes
-? 
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 
-Overfull \hbox (67.30095pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 36 \OT1/cmr/m/sl/12 CHAPTER 6.  REDES CONVOLUCIONAIS: IMPLEMENT
-A[][]AO PROFUNDA
+Overfull \hbox (70.6246pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 36 \T1/cmr/m/sl/12 CAP�TULO 6.  REDES CONVOLUCIONAIS: IMPLEMENTA
+CAO PROFUNDA
  []
 
 [36]
 
 [37]
-
-
-Overfull \hbox (67.30095pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 38 \OT1/cmr/m/sl/12 CHAPTER 6.  REDES CONVOLUCIONAIS: IMPLEMENT
-A[][]AO PROFUNDA
- []
-
-[38
-
-]
-Chapter 7.
-
-
-[39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[40]
 
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+Overfull \hbox (70.6246pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 38 \T1/cmr/m/sl/12 CAP�TULO 6.  REDES CONVOLUCIONAIS: IMPLEMENTA
+CAO PROFUNDA
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1151 ...t;      // Timestep para cada parâmetro
-                                                  
-? 
+[38]
 
-! LaTeX Error: Invalid UTF-8 byte "A2.
+[39]
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1151 ...t;      // Timestep para cada parâmetro
-                                                  
-? 
+
+Overfull \hbox (70.6246pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 40 \T1/cmr/m/sl/12 CAP�TULO 6.  REDES CONVOLUCIONAIS: IMPLEMENTA
+CAO PROFUNDA
+ []
+
+[40
+
+]
+Cap\'{\i }tulo 7.
 
 
 [41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1199             // Correção 
-                                 de viés
-? 
 
-! LaTeX Error: Invalid UTF-8 byte "A7.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1199             // Correção 
-                                 de viés
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1199             // Correção 
-                                 de viés
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1199             // Correção 
-                                 de viés
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1199             // Correção de viés
-                                         
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A9.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1199             // Correção de viés
-                                         
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1203             // Atualiza parâmetro
-                                         
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A2.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1203             // Atualiza parâmetro
-                                         
-? 
-
+Overfull \hbox (1.30681pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 42 \T1/cmr/m/sl/12 CAP�TULO 7.  OTIMIZADORES: TEORIA E IMPLEMENT
+ACAO
+ []
 
 [42]
-Chapter 8.
+
+[43]
 
 
-[43
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+Overfull \hbox (1.30681pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 44 \T1/cmr/m/sl/12 CAP�TULO 7.  OTIMIZADORES: TEORIA E IMPLEMENT
+ACAO
+ []
 
 [44]
-
-[45]
-
-[46]
-Chapter 9.
+Cap\'{\i }tulo 8.
 
 
-[47
+[45
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1413         // Parâmetros 
-                              da camada
-? 
 
-! LaTeX Error: Invalid UTF-8 byte "A2.
+[46]
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1413         // Parâmetros 
-                              da camada
-? 
+[47]
 
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+[48]
+Cap\'{\i }tulo 9.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1419         // Ativação
-                            
-? 
 
-! LaTeX Error: Invalid UTF-8 byte "A7.
+[49
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1419         // Ativação
-                            
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1419         // Ativação
-                            
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1419         // Ativação
-                            
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1441 ...  printf("Formato de arquivo inválido\n
-                                                  ");
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1441 ...  printf("Formato de arquivo inválido\n
-                                                  ");
-? 
-
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 
-Overfull \hbox (3.0254pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 48 \OT1/cmr/m/sl/12 CHAPTER 9.  SERIALIZA[][]AO E PERSIST[]ENCI
-A DE MODELOS
+Overfull \hbox (6.36414pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 50 \T1/cmr/m/sl/12 CAP�TULO 9.  SERIALIZACAO E PERSISTENCIA DE M
+ODELOS
  []
 
-[48]
-
-[49]
-
-
-Overfull \hbox (3.0254pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 50 \OT1/cmr/m/sl/12 CHAPTER 9.  SERIALIZA[][]AO E PERSIST[]ENCI
-A DE MODELOS
- []
-
-[50
-
-]
-Chapter 10.
-
+[50]
 
 [51]
 
-[52]
+
+Overfull \hbox (6.36414pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 52 \T1/cmr/m/sl/12 CAP�TULO 9.  SERIALIZACAO E PERSISTENCIA DE M
+ODELOS
+ []
+
+[52
+
+]
+Cap\'{\i }tulo 10.
+
 
 [53]
 
-[54
-
-]
-Chapter 11.
-
+[54]
 
 [55]
 
+[56
 
-Overfull \hbox (4.00166pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 56 \OT1/cmr/m/sl/12 CHAPTER 11.  OTIMIZA[][]OES AVAN[]ADAS E PE
-RFORMANCE
- []
-
-[56]
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1648                     // Cálculo 
-                                       da convolução
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1648                     // Cálculo 
-                                       da convolução
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1648 ...             // Cálculo da convolução
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A7.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1648 ...             // Cálculo da convolução
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1648 ...             // Cálculo da convolução
-                                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1648 ...             // Cálculo da convolução
-                                                  
-? 
+]
+Cap\'{\i }tulo 11.
 
 
 [57]
 
 
-Overfull \hbox (4.00166pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 58 \OT1/cmr/m/sl/12 CHAPTER 11.  OTIMIZA[][]OES AVAN[]ADAS E PE
-RFORMANCE
+Overfull \hbox (7.6665pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 58 \T1/cmr/m/sl/12 CAP�TULO 11.  OTIMIZACOES AVANCADAS E PERFORM
+ANCE
  []
 
-[58
+[58]
+
+[59]
+
+
+Overfull \hbox (7.6665pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 60 \T1/cmr/m/sl/12 CAP�TULO 11.  OTIMIZACOES AVANCADAS E PERFORM
+ANCE
+ []
+
+[60
 
 ]
-Chapter 12.
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1676     // Alocar memória 
-                              na GPU
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "B3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1676     // Alocar memória 
-                              na GPU
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1684     // Lançar 
-                      kernel
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A7.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1684     // Lançar 
-                      kernel
-? 
+Cap\'{\i }tulo 12.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[59]
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1693     // Liberar memória
-                              
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "B3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1693     // Liberar memória
-                              
-? 
-
-Overfull \hbox (4.19757pt too wide) in paragraph at lines 1702--1703
-\OT1/cmr/m/n/12 Arquitetura com-pleta de Trans-former para pro-ces-sa-mento de 
-sequ^encias: 
- []
-
-
-
-[60]
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1737     // Multiplicação 
-                              em FP16 (usando hardware nativo)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A7.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1737     // Multiplicação 
-                              em FP16 (usando hardware nativo)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1737     // Multiplicação 
-                              em FP16 (usando hardware nativo)
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "A3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1737     // Multiplicação 
-                              em FP16 (usando hardware nativo)
-? 
-
-
 [61]
 
-[62
+[62]
+
+[63]
+
+[64
 
 ]
 
-[63] (framework_ml_em_c_master.aux)
+[65] (framework_ml_em_c_master.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
  ***********
-
-
-Package rerunfilecheck Warning: File `framework_ml_em_c_master.out' has changed
-.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `framework_ml_em_c_master.out':
-(rerunfilecheck)             Before: E2B5BBCCDCA8E8B3C3B49AD58CF556E4;4377
-(rerunfilecheck)             After:  9F0FDB22EC3BCECC2918E5213D67D4CE;13847.
+Package rerunfilecheck Info: File `framework_ml_em_c_master.out' has not change
+d.
+(rerunfilecheck)             Checksum: 2AD0DE2697391D1943094F4F6D345E4F;13553.
  ) 
 Here is how much of TeX's memory you used:
- 27778 strings out of 468219
- 524317 string characters out of 5431901
- 1761645 words of memory out of 5000000
- 54482 multiletter control sequences out of 15000+600000
- 638188 words of font info for 83 fonts, out of 8000000 for 9000
+ 29123 strings out of 468219
+ 547196 string characters out of 5431901
+ 1792626 words of memory out of 5000000
+ 55795 multiletter control sequences out of 15000+600000
+ 646704 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,91p,563b,2107s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{chapter.13} has been referenced but does not exist,
- replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.12.5} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.12.4} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.6.4} has been referenced but does not exist
-, replaced by a fixed one
-
- <C:\Users\Scope11\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1200.pk><C:/Users/Scope11/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb><C:/Users/Scope11/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmbx8.pfb><C:/Users/Scope11/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Scope11/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Scope11/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Scope11/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/User
-s/Scope11/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><C:/Users/Scope11/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr17.pfb><C:/Users/Scope11/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr6.pfb><C:/Users/Scope11/AppData/Local/Programs/MiKTeX/fonts/type
+ 84i,11n,91p,563b,2160s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Scope11\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
+tt1000.pk> <C:\Users\Scope11\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
+pi600\ecti1200.pk> <C:\Users\Scope11\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx1440.pk> <C:\Users\Scope11\AppData\Local\MiKTeX\fonts/pk/ljfo
+ur/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Scope11\AppData\Local\MiKTeX\fonts
+/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\Scope11\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Scope11\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Scope11\Ap
+pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1200.pk> <C:\Users\Sc
+ope11\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\
+Users\Scope11\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.
+pk> <C:\Users\Scope11\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
+crm1200.pk> <C:\Users\Scope11\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
+dpi600\ecrm1440.pk> <C:\Users\Scope11\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
+ppen/ec/dpi600\ecrm2074.pk><C:/Users/Scope11/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Scope11/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Scope11/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Scope11/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users
+/Scope11/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb
+><C:/Users/Scope11/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb><C:/Users/Scope11/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr12.pfb><C:/Users/Scope11/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmr8.pfb><C:/Users/Scope11/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Scope11/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Scope11/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Scope11
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Use
-rs/Scope11/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.
-pfb><C:/Users/Scope11/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmtt10.pfb><C:/Users/Scope11/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb>
-Output written on framework_ml_em_c_master.pdf (63 pages, 596939 bytes).
+onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Scope11/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Scope11/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Scope11/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on framework_ml_em_c_master.pdf (65 pages, 712898 bytes).
 PDF statistics:
- 2128 PDF objects out of 2487 (max. 8388607)
- 1396 named destinations out of 1440 (max. 500000)
- 309 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2770 PDF objects out of 2984 (max. 8388607)
+ 1394 named destinations out of 1440 (max. 500000)
+ 509 words of extra memory for PDF output out of 10000 (max. 10000000)
 
