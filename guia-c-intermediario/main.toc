@@ -1,0 +1,39 @@
+\babel@toc {portuguese}{}\relax 
+\contentsline {chapter}{\numberline {1}Ponteiros em C}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Conceitos Fundamentais}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Declaração e Operadores Básicos}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Aritmética de Ponteiros}{1}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Ponteiros e Arrays}{1}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Ponteiros para Ponteiros — Uso Real}{2}{subsection.1.1.4}%
+\contentsline {subsubsection}{Exemplo 1 — Alocação dinâmica dentro da função}{2}{section*.2}%
+\contentsline {subsubsection}{Exemplo 2 — Matriz dinâmica usando ponteiro para ponteiro}{2}{section*.3}%
+\contentsline {subsection}{\numberline {1.1.5}Ponteiros para Funções}{3}{subsection.1.1.5}%
+\contentsline {chapter}{\numberline {2}Alocação Dinâmica de Memória}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Stack vs Heap}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Funções de Alocação}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}malloc}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}calloc}{5}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}realloc}{6}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}free}{6}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Exemplo Completo}{6}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Erros Comuns e Boas Práticas}{6}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Structs e Unions}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Definindo Structs}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}typedef}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Ponteiros para Struct}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Alinhamento e Padding}{9}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Unions}{10}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Aplicação Prática: MLP para MNIST em C}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Visão Geral do MNIST}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Estruturas de Dados}{11}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Matriz}{11}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Camada}{12}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Rede}{13}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Operações com Matrizes}{13}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Forward Propagation}{14}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Backpropagation e Treinamento}{14}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Leitura do Dataset MNIST}{15}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Exemplo Completo de Uso}{15}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Observações sobre o Código}{16}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Conclusão e Boas Práticas}{19}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Funções Auxiliares (Exemplos)}{21}{appendix.A}%
